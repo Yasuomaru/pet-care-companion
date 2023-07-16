@@ -6,9 +6,6 @@ export default function PetsScreenHeader() {
     return (
         <MainHeader>
             <Text>Pets</Text>
-            <Icon name="comments" size={30} color="#900" />
-            <Icon name="comments" size={30} color="#900" solid />
-            <Icon name="comments" size={30} color="#900" light />
         </MainHeader >
     );
 }
