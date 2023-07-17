@@ -1,13 +1,19 @@
-import {PetItemContainer, PetItemCol1, PetItemCol2} from './style'
-import {Text} from 'react-native'
+import { TouchableOpacity } from 'react-native'
+import { PetItemAvatarColumn, PetItemContainer, PetItemContentColumn, PetItemTitle } from './style'
 
 export default function PetsItem({title}){
+	function handlePress(){
+		alert(`Pressed on ${title}!`)
+	}
+
 	return (
-		<PetItemContainer>
-			<PetItemCol1/>
-			<PetItemCol2> 
-				<Text>{title}</Text>
-			</PetItemCol2>
-		</PetItemContainer>
-	)	
+		<TouchableOpacity onPress={handlePress}>
+			<PetItemContainer>
+				<PetItemAvatarColumn/>
+				<PetItemContentColumn> 
+						<PetItemTitle>{title}</PetItemTitle>
+				</PetItemContentColumn>
+			</PetItemContainer>
+		</TouchableOpacity>
+	)
 }
