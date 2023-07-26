@@ -3,9 +3,8 @@ import theme from "../../../theme";
 
 export const PetItemContainer = styled.View`
   padding: 20px;
-  bottom-border: 5px black solid;
   flex-direction: row;
-  background-color: ${theme.colors.accent};
+  background-color: ${theme.colors.secondary};
 `;
 
 export const PetItemAvatarColumn = styled.View`
@@ -17,5 +16,5 @@ export const PetItemContentColumn = styled.View``;
 export const PetItemTitle = styled.Text`
   font-size: 20px;
   font-weight: bold;
-  color: ${theme.colors.primary};
+  color: ${theme.colors.accent};
 `;
